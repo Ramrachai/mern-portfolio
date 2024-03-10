@@ -13,9 +13,22 @@ import { RoundButton, SquareButton } from "../shared/StyledComponents";
 const Header = () => {
     const [nav, setNav] = useState(false);
     const [activeSection, setActiveSection] = useState("home")
+    const [isSticky, setIsSticky] = useState(false)
     const handleClick = (sectionId) => {
         setActiveSection(sectionId)
     }
+
+    useEffect( ()=> {
+        const handleScroll = () => {
+            const scroll = window.scrollY
+            setIsSticky( scroll >= 200 )
+        }
+        window.addEventListener("scroll", handleScroll)
+
+        return () => {
+            window.removeEventListener("scroll", handleScroll)
+        }
+    }, [])
     const links = [
         {
             id: 1,
@@ -65,7 +78,7 @@ const Header = () => {
     ];
 
     return (
-        <div className="flex justify-between items-center w-full h-20 p-4 md:p-12 nav">
+        <nav className={`flex justify-between items-center w-full h-20 p-4 md:p-12 nav ${isSticky ? styles.sticky : ''}`}>
             <div>
                 <Link
                     className=""
@@ -126,6 +139,9 @@ const Header = () => {
                                 <SquareButton href={"#"}>
                                     <FaFacebookF size={20}/>
                                 </SquareButton>
+
+                                <a href="#" className="social-icons"> <i className="facebook-icon"></i>  </a> 
+
                                 <SquareButton href={"#"}>
                                     <FaTwitter size={20}/>
                                 </SquareButton>
@@ -138,7 +154,7 @@ const Header = () => {
 
                 </div>
             )}
-        </div>
+        </nav>
     );
 };
 

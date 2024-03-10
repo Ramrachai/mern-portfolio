@@ -2,3 +2,12 @@
     color: #ffffff; 
     opacity: 1;
 }
+
+
+.sticky {
+    position: sticky;
+    top:0; 
+    left: 0;
+    backdrop-filter: blur(10px);
+    background: var(--primary);
+}

@@ -8,7 +8,6 @@ export const Title = styled.h1`
     color: red; 
 `
 export const Button = styled.button`
-  /* Adapt the colors based on primary prop */
   background: ${props => props.$primary ? "#BF4F74" : "white"};
   color: ${props => props.$primary ? "white" : "#BF4F74"};
   font-size: 1em;
@@ -34,6 +33,7 @@ export const SquareButton = styled(Link)`
   border-radius: 10px;
   background: var(--primary-dark);
   transition: all .4s ;
+
   &:hover {
     transform: translateY(-5px);
     background: linear-gradient(145deg, #282b2f, #121517);
