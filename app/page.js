@@ -1,5 +1,4 @@
-import Header from "../components/Header";
-import { Title, Button } from "../components/shared/StyledComponents";
+import Header from "@/components/Header";
 
 export default function Home() {
   return (

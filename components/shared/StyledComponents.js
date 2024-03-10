@@ -17,3 +17,25 @@ export const Button = styled.button`
   border: 2px solid #BF4F74;
   border-radius: 3px;
 `;
+
+export const RoundButton = styled.button`
+  padding: 14px; 
+  color: var(--secondary); 
+  border-radius: 50%;
+  background-color: linear-gradient(145deg, #1e2024, #23272b); 
+  box-shadow: var(--shadow-1);
+  transition: all .4s ;
+  &:hover{
+    scale: 1.06;
+  }
+`
+export const SquareButton = styled(Link)`
+  padding: 15px; 
+  border-radius: 10px;
+  background: var(--primary-dark);
+  transition: all .4s ;
+  &:hover {
+    transform: translateY(-5px);
+    background: linear-gradient(145deg, #282b2f, #121517);
+  }
+`
