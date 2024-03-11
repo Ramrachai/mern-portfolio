@@ -1,0 +1,13 @@
+.active {
+  color: #ffffff;
+  opacity: 1;
+}
+
+.sticky {
+  position: sticky;
+  top: 0;
+  left: 0;
+  -webkit-backdrop-filter: blur(10px);
+          backdrop-filter: blur(10px);
+  background: var(--primary);
+}/*# sourceMappingURL=headers.module.css.map */
