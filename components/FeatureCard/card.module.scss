@@ -1,11 +1,59 @@
-.cardContainer{
+.cardContainer {
+  height: auto;
+  width: 350px;
+  padding: 30px;
+  background: linear-gradient(145deg, #1e2024, #23272b);
+  box-shadow: var(--shadow-1);
+  border-radius: 10px;
+  transition: all 0.5s;
+  overflow: hidden;
+  cursor: pointer;
+
+  .inner {
+    height: 100%;
+    width: 100%;
+    transition: all 0.4s ease-in-out;
+  }
+
+  svg {
+    fill: var(--secondary);
+    stroke: 1 var(--secondary);
+  }
+
+  .topIcon{
     height: auto;
-    width: 50%;
-    padding: 50px 60px;
+    width: 50px;
+  }
+
+  h3 {
+    color: var(--color-lightn);
+    font-weight: 500;
+    font-size: 24px;
+    line-height: 32px;
+    margin-bottom: 20px;
+    margin-top: 20px;
+  }
+
+  .arrow {
+    height: 30px;
+    width: 30px !important;
+    font-size: 30px;
+    margin-top: 10px;
+    opacity: 0;
+    transition: all 0.4s ease-in-out;
+  }
+
+  &:hover {
     background: linear-gradient(to right bottom, #212428, #16181c);
-    border-radius: 10px 
+    // background: linear-gradient(to right bottom, #5384c5, #d6d256);
+    .inner {
+      transform: translateY(-10px);
+    }
+    .arrow {
+      opacity: 1;
+    }
+  }
 }
-.cardContainer:hover{
-    transform: translateY(-10px);
-    transition: all 0.3s;
-}
+
+
+
