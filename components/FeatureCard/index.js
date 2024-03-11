@@ -2,8 +2,6 @@ import React from 'react'
 import styles from "./card.module.scss"
 import { HiBars4 } from "react-icons/hi2";
 import { FaArrowRightLong } from "react-icons/fa6";
-import { RoundButton } from '../shared/StyledComponents';
-import ArrowIcon from '../shared/ArrowIcon';
 
 const FeatureCard = () => {
     return (
