@@ -13,8 +13,6 @@ const FeatureCard = () => {
                 <h3>Business Stratagy</h3>
                 <p>I throw myself down among the tall grass by the stream as Ilie close to the earth.</p>
                 <FaArrowRightLong className={styles.arrow} />
-
-                {/* <ArrowIcon> <FaArrowRightLong size={30}/> </ArrowIcon> */}
             </div>
         </div>
     )

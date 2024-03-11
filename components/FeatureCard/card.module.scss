@@ -20,11 +20,6 @@
     stroke: 1 var(--secondary);
   }
 
-  .topIcon{
-    height: auto;
-    width: 50px;
-  }
-
   h3 {
     color: var(--color-lightn);
     font-weight: 500;
@@ -32,6 +27,11 @@
     line-height: 32px;
     margin-bottom: 20px;
     margin-top: 20px;
+  }
+
+  .topIcon{
+    height: auto;
+    width: 50px;
   }
 
   .arrow {
