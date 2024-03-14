@@ -8,9 +8,9 @@ export default function Home() {
   return (
     <main>
       <Header />
-      <FeatureCard/>
-      <PortfolioCard/>
-      <div className="h-[1800px"></div>
+      <FeatureCard /> <br /> <br />
+      <PortfolioCard />
+      <div className='h-[1800px'></div>
     </main>
   );
 }

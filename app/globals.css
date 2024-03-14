@@ -12,6 +12,8 @@
 --text-color: #c4cfde;  
 --color-lightn: #c4cfde; 
 --shadow-1: 10px 10px 19px #1c1e22, -10px -10px 19px #262a2e;
+--background-1: linear-gradient(145deg, #1e2024, #23272b);
+--background-1-hover: linear-gradient(to right bottom, #212428, #16181c);
 }
 
 body {
