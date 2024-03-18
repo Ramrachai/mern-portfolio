@@ -3,13 +3,13 @@ import styles from "./card.module.scss"
 import { HiBars4 } from "react-icons/hi2";
 import { FaArrowRightLong } from "react-icons/fa6";
 
-const FeatureCard = () => {
+const FeatureCard = (props) => {
     return (
         <div className={styles.cardContainer}>
             <div className={styles.inner}>
                 <HiBars4 className={styles.topIcon}/>
-                <h3>Business Stratagy</h3>
-                <p>I throw myself down among the tall grass by the stream as Ilie close to the earth.</p>
+                <h3>{props.children}</h3>
+                <p>{props.children}</p>
                 <FaArrowRightLong className={styles.arrow} />
             </div>
         </div>

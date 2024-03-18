@@ -1,5 +1,5 @@
 import React from 'react';
-import styles from './singleBlog.modules.css'
+import styles from './singleBlog.module.scss'
 import portfolio1 from '../../assets/portfolio-large-01.jpg'
 import Image from 'next/image';
 import { FaRegThumbsUp } from "react-icons/fa";
@@ -7,7 +7,7 @@ import { FaArrowAltCircleRight } from "react-icons/fa";
 
 const SingleBlog = () => {
     return (
-        <div className={styles.container}>
+        <div className={styles.blogContainer}>
             <div className={styles.mainArea}>
             <div className={styles.leftArea}>
                 <Image src={portfolio1} alt="portfolio1" width={350}/>
