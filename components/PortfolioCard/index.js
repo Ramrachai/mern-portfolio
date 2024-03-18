@@ -10,27 +10,23 @@ import Link from 'next/link';
 import { FaArrowAltCircleUp, FaHeart } from 'react-icons/fa';
 import { MdArrowOutward } from 'react-icons/md';
 
-const PortfolioCard = ( props ) => {
-
-  console.log("my props ==", props)
-
-
+const PortfolioCard = ({ img, category, icon, price, title }) => {
   return (
     <div>
       <div className={styles.cardContainer}>
         <div className={styles.inner}>
           <div className={styles.imageContainer}>
-            <Image src={props.image} alt='portfolio1' height={400}  width={350} />
+            <Image src={img} alt='portfolio1' width={350} />
           </div>
           <div className={styles.cardMeta}>
-            <Link href='#'> {props.category} </Link>
+            <Link href='#'> {category} </Link>
             <div className={styles.cardMetaRight}>
-              <FaHeart />
-              <p>{props.price}</p>
+              {icon}
+              <p> {price} </p>
             </div>
           </div>
           <Link className={styles.cardTitle} href={'#'}>
-            {props.children}
+            {title}
             <MdArrowOutward />
           </Link>
         </div>
