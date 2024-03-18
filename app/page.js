@@ -1,5 +1,4 @@
-
-import Header from "@/components/Header";
+import Header from '@/components/Header';
 import FeatureSection from '@/section/FeatureSection';
 
 export default function Home() {
@@ -10,7 +9,3 @@ export default function Home() {
     </main>
   );
 }
-
-
-
-
