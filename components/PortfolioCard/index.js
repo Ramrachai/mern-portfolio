@@ -6,23 +6,23 @@ import Link from 'next/link';
 import { FaArrowAltCircleUp, FaHeart } from 'react-icons/fa';
 import { MdArrowOutward } from 'react-icons/md';
 
-const PortfolioCard = () => {
+const PortfolioCard = ({ img, category, icon, price, title }) => {
   return (
     <div>
       <div className={styles.cardContainer}>
         <div className={styles.inner}>
           <div className={styles.imageContainer}>
-            <Image src={portfolio1} alt='portfolio1' width={350} />
+            <Image src={img} alt='portfolio1' width={350} />
           </div>
           <div className={styles.cardMeta}>
-            <Link href='#'>GALLERY </Link>
+            <Link href='#'> {category} </Link>
             <div className={styles.cardMetaRight}>
-              <FaHeart />
-              <p>443</p>
+              {icon}
+              <p> {price} </p>
             </div>
           </div>
           <Link className={styles.cardTitle} href={'#'}>
-            NFT Dashboard Application Development.
+            {title}
             <MdArrowOutward />
           </Link>
         </div>
