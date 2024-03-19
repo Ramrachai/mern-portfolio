@@ -1,50 +1,68 @@
-.container{
-    display: flex;
-    width: 80%;
-    border: 1px solid green;
-    margin: 0 auto;
+.container {
+  display: flex;
+  width: 80%;
+  border: 1px solid green;
+  margin: 0 auto;
+  gap: 1rem;
 
-    
+  @media (max-width: 768px) {
+    flex-direction: column-reverse;
+  }
 }
 
-
-.textContainer,.imageContainer{
-    flex:1;
-    border: 1px solid red;
-
-   
-}
-.title{
-    font-size: 16px;
-    font-weight: 600;
-    text-transform: uppercase;
-    letter-spacing: 3;
-    color: #c4cfde;
-    margin-bottom: 20px;
-    display: block;
-}
-.name{
-   color:var(--secondary);
+.textContainer,
+.imageContainer {
+  flex: 1;
+  border: 1px solid red;
 }
 .textContainer {
-    h1{
-        font-size:60px;
-        line-height: 62px;
-        font-weight: 700;
-        margin-bottom: 22px;
-    
-    }
+  h1 {
+    font-size: 40px;
+    font-weight: 700;
+    margin-bottom: 22px;
+    color: var(--text-color); 
+  }
 }
-.description{
-    font-size:14px;
-    font-weight: 500;
-    color: white;
-    line-height: 20px;
+
+.title {
+  font-size: 14px;
+  font-weight: 500;
+  text-transform: uppercase;
+  letter-spacing: 3px;
+  color: var(--color-lightn);
+  margin-bottom: 20px;
+  font-family: 'Montserrat', sans-serif;
 }
-.buttonContainer{
-    display: flex;
+
+span.name {
+  color: var(--secondary);
 }
-.socialBtn,.skillBtn{
-    display: flex;
-   gap: 20px;
+
+.description {
+  line-height: 25px;
+  font-size: 16px;
+  opacity: 0.9;
+  margin-bottom: 20px;
+
+}
+
+.buttonContainer {
+  display: flex;
+  gap: 1rem;
+  @media (max-width:768px) {
+    flex-direction: column;
+  }
+
+
+  .socialBtn p, .skillBtn p {
+    width: 100%;
+  }
+}
+
+
+.socialBtn,
+.skillBtn {
+  display: flex;
+  gap: 20px;
+  flex-wrap: wrap;
 }
