@@ -1,0 +1,50 @@
+.container{
+    display: flex;
+    width: 80%;
+    border: 1px solid green;
+    margin: 0 auto;
+
+    
+}
+
+
+.textContainer,.imageContainer{
+    flex:1;
+    border: 1px solid red;
+
+   
+}
+.title{
+    font-size: 16px;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 3;
+    color: #c4cfde;
+    margin-bottom: 20px;
+    display: block;
+}
+.name{
+   color:var(--secondary);
+}
+.textContainer {
+    h1{
+        font-size:60px;
+        line-height: 62px;
+        font-weight: 700;
+        margin-bottom: 22px;
+    
+    }
+}
+.description{
+    font-size:14px;
+    font-weight: 500;
+    color: white;
+    line-height: 20px;
+}
+.buttonContainer{
+    display: flex;
+}
+.socialBtn,.skillBtn{
+    display: flex;
+   gap: 20px;
+}
