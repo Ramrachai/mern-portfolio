@@ -45,24 +45,18 @@ const portfolioData = [
 
 const PortfolioSection = () => {
     return (
-    <div className={styles.portfolioCardsContainer}>
+      <section className={styles.container}>
         <h2>VISIT MY PORTFOLIO AND KEEP YOUR FEEDBACK</h2>
         <h1>My Portfolio</h1>
-        <div className={styles.portfolioCardContainer}> 
-            {
-                portfolioData.map( (item, index) => {
-                    return (
-
-                            <PortfolioCard img={item.img} title={item.title} key={index} /> 
-                    )
-                })
-            }
-            
-
-
-            </div>
+        <div className={styles.cardsContainer}>
+          {portfolioData.map((item, index) => {
+            return (
+              <PortfolioCard img={item.img} title={item.title} key={index} />
+            );
+          })}
         </div>
-    )
+      </section>
+    );
 }
 
 
