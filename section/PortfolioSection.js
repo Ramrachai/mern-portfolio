@@ -14,29 +14,41 @@ const portfolioData = [
 
     {
         img: img1, 
-        title: "NFT Dashboard Application Development.                                        "
+        title: "NFT Dashboard Application Development.",
+        category:"gallary",
+        price:496
     }, 
 
     {
         img: img2, 
-        title: "Travel App Design Creativity & Application. "
+        title: "Travel App Design Creativity & Application. ",
+        category:"video",
+        price:438
     }, 
 
     {
         img: img3, 
-        title: "Travel App Design Creativity & Application. "
+        title: "Travel App Design Creativity & Application. ",
+        category:"external link",
+        price:187
     },
     {
         img: img4, 
-        title: "Restaurant Mobile Application Figma Design.                                         "
+        title: "Restaurant Mobile Application Figma Design.  ",
+        category:"image",
+        price:279
     },
     {
         img: img5, 
-        title: "Workout Website Design And Development.                                        "
+        title: "Workout Website Design And Development.  ",
+        category:"gallery",
+        price:293
     },
     {
         img: img6, 
-        title: "Workout Website Design And Development.                                        "
+        title: "Workout Website Design And Development.   ",
+        category:"standard",
+        price:201
     }
 
 

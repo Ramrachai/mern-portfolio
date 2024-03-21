@@ -1,0 +1,99 @@
+.cardContainer{
+    min-width:250px;
+    height:auto;
+    background-color: rgb(21, 21, 21);
+    padding:30px;
+    border-radius: 10px;
+    transition: all 0.5s;
+    overflow: hidden;
+    cursor: pointer;
+    .inner{
+        width:100%;
+        height:auto;
+           .imageContainer{
+            width:100%;
+            border-radius: 20px;
+            overflow: hidden;
+            height:250px;
+
+           }
+           img{
+            
+            border-radius: 10px;
+            transition: all .4s ease;
+            height:100%;
+            width:auto;
+           }
+           .cardMeta{
+            display: flex;
+            margin-top: 12px;
+            justify-content: space-between;
+
+            a{
+                color: var(--secondary);
+                font-size: 12px;
+                letter-spacing: 1px;
+                text-transform: uppercase;
+                font-family: '';
+            }
+            .cardMetaRight{
+                display: flex;
+                justify-content: start;
+                align-items: center;
+                gap: 5px;
+                p{
+                    font-family: '';
+                    font-size: 13px;
+                    font-weight: 500;
+                     color:  #c4cfde
+                   }
+            }
+           }
+    }
+    .cardTitle{
+        color: var(--color-lightn);
+        font-weight: 600;
+        font-size: 18px;
+        margin-top: 24px;
+        transition: all .4s ease;
+        display: block;
+         h2 {
+            color:var(--text-color);
+            font-size: 18px;
+            line-height: 20px;
+            letter-spacing: 1px;
+            font-weight: 500;
+            text-align: start;
+            text-transform: capitalize;
+            font-family: '';
+          &:hover{
+            color: var(--secondary);
+          }  
+        }
+        
+        svg{
+            display: block;
+            margin-left: 6px;
+            opacity: 0;
+            transition: all .4s ease;
+            fill: var(--secondary);
+            
+        }
+        &:hover svg{
+            opacity: 1;
+            transform: translateY(0);
+            font-size: 18px;
+        }
+        &:hover{
+            color: var(--secondary);
+        }
+    }
+    &:hover .inner img {
+        transform: scale(1.1);
+    }
+
+    &:hover {
+        background: var(--background-1-hover);
+    }
+   
+}

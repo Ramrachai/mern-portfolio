@@ -29,13 +29,19 @@ export const RoundButton = styled.button`
   }
 `
 export const SquareButton = styled(Link)`
+  height: 60px; 
+  width: 60px; 
+  line-height: 60px; 
+  font-size: 14px; 
   padding: 15px; 
-  border-radius: 10px;
-  background: var(--primary-dark);
+  border-radius: 6px;
+  background: linear-gradient(145deg, #1e2024, #23272b); 
   transition: all .4s ;
+  box-shadow: 10px 10px 19px #1c1e22, -10px -10px 19px #262a2e; 
+  display: grid; 
+  place-items: center;
 
   &:hover {
     transform: translateY(-5px);
-    background: linear-gradient(145deg, #282b2f, #121517);
   }
 `

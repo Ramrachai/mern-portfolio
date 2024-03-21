@@ -1,56 +1,81 @@
 .container {
   display: flex;
   width: 80%;
-  border: 1px solid green;
   margin: 0 auto;
+  padding: 24px 0 60px 0; 
   gap: 1rem;
 
-  @media (max-width: 768px) {
+  @media (max-width: 1200px) {
+    width: 90%;
+  }
+
+  @media (max-width: 1030px) {
     flex-direction: column-reverse;
   }
 }
 
-.textContainer,
+.textContainer {
+  flex: 2; 
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  flex-wrap: wrap; 
+}
 .imageContainer {
   flex: 1;
-  border: 1px solid red;
 }
+
+
 .textContainer {
   h1 {
-    font-size: 40px;
+    font-size: 60px;
+    line-height: 62px;
     font-weight: 700;
     margin-bottom: 22px;
     color: var(--text-color); 
+
+    @media (width < 768px){
+      font-size: 46px;
+    }
   }
-}
 
-.title {
-  font-size: 14px;
-  font-weight: 500;
-  text-transform: uppercase;
-  letter-spacing: 3px;
-  color: var(--color-lightn);
-  margin-bottom: 20px;
-  font-family: 'Montserrat', sans-serif;
-}
+  .title {
+    font-size: 14px;
+    font-weight: 500;
+    text-transform: uppercase;
+    letter-spacing: 3px;
+    color: var(--color-lightn);
+    margin-bottom: 20px;
+    font-family: 'Montserrat', sans-serif;
+  }
 
-span.name {
-  color: var(--secondary);
-}
+  span {
+    font-weight: 700;
+  }
+  span.name{
+    color: var(--secondary);
+  }
 
-.description {
-  line-height: 25px;
-  font-size: 16px;
-  opacity: 0.9;
-  margin-bottom: 20px;
 
+  .description {
+    line-height: 40px;
+    max-width:70%; 
+    font-size: 16px;
+    opacity: 0.9;
+    margin-bottom: 20px;
+    font-family: "Poppins", sans-serif;
+  }
 }
 
 .buttonContainer {
   display: flex;
+  justify-content: space-between;
   gap: 1rem;
-  @media (max-width:768px) {
+  padding-top: 100px;
+  @media (max-width:1030px) {
     flex-direction: column;
+    gap: 3rem;
   }
 
 
@@ -65,4 +90,33 @@ span.name {
   display: flex;
   gap: 20px;
   flex-wrap: wrap;
+}
+.imageContainer{
+  display: flex;
+  justify-content:center;
+}
+.imageContainer .inner {
+  width: max-content;
+  height: 70%;
+  position: relative;
+  z-index: 1;
+
+  img{
+    width: auto;
+    height: 100%;
+    object-fit: contain;
+  }
+}
+
+.imageContainer .inner::before{
+  content: "";
+  background-color: linear-gradient(145deg, #1e2024, #23272b); 
+  box-shadow: 10px 10px 19px #1c1e22, -10px -10px 19px #262a2e;
+  position: absolute;
+  z-index: -1;
+  width: 100%;
+  height: calc(100% - 130px);
+  left: 50%;
+  bottom: 0;
+  transform: translateX(-50%);
 }
