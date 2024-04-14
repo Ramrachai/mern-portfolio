@@ -1,0 +1,105 @@
+.container{
+   min-width: 80%;
+   display: flex;
+   justify-content: center;
+}
+
+.inner {
+    display: flex;
+    justify-content: space-evenly;  
+    
+.left{
+    width:25%;
+    align-items: center;
+    padding: 30px ;
+}
+.right{
+    padding: 50px 40px 50px 40px;
+    width:65%;
+    align-items: center;
+    justify-content: center;
+}
+    .left,
+    .right {
+        
+        background: linear-gradient(145deg, #1e2024, #23272b);
+        box-shadow:  10px 10px 19px #1c1e22, -10px -10px 19px #262a2e;
+        border-radius: 10px;
+        transition: all 0.5s;
+        overflow: hidden;
+        cursor: pointer;
+
+        .imgContainer img {
+            border-radius: 10px;
+            height: auto;
+            transition: all 0.6s ease;
+            margin-bottom: 20px;
+            width: 100%;
+
+            &:hover {
+                transform: scale(1.1);
+            }
+        }
+
+        .subTitle {
+            font-size: 12px;
+            font-weight: 500;
+            text-transform: uppercase;
+            color: #ff014f;
+        }
+
+        .title {
+            font-size: 24px;
+            font-weight: 700;
+            color: #c4cfde;
+        }
+
+        .content {
+            font-size: 14px;
+        }
+
+        .titleArea {
+            display: flex;
+            justify-content: space-between;
+            padding-bottom: 20px;
+            border-bottom: 1px solid rgb(39, 31, 31);
+        }
+
+        h2 {
+            font-size: 24px;
+
+        }
+
+        p {
+            font-size: 10px;
+            color: #c4cfde;
+        }
+
+        .description p {
+            font-size: 14px;
+            font-weight: 400;
+            line-height: 24px;
+            color: #c4cfde;
+        }
+
+        .reviewArea {
+            display: flex;
+            flex-wrap: wrap;
+            padding: 6px 17px;
+            border-radius: 6px;
+            background: linear-gradient(145deg, #1e2024, #23272b);
+            box-shadow: 10px 10px 19px #1c1e22, -10px -10px 19px #262a2e;
+            align-items: center;
+
+            svg {
+                color: rgb(252 185 0);
+                height: 10px;
+                width: auto;
+            }
+
+        }
+
+    }
+
+
+}
