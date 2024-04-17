@@ -1,5 +1,5 @@
 import Header from '@/components/Header';
-import ResumeTabs from '@/components/ResumeTabs';
+import ResumeTabs from '@/components/ResumeTabs/Tabs';
 
 import Testimonial from '@/components/Testimonial/Testimonial';
 import { testimonialsData } from '@/components/Testimonial/testimonialData';
