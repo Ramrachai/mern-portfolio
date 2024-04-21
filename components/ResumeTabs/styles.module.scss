@@ -3,7 +3,7 @@
     margin: 0 auto;
     display: block;
 
-    & > h2 {
+    &>h2 {
         color: var(--secondary);
         line-height: 14px;
         text-transform: uppercase;
@@ -13,7 +13,7 @@
         text-align: center;
     }
 
-    & > h1 {
+    &>h1 {
         margin: 0;
         font-size: 60px;
         font-weight: 700;
@@ -24,6 +24,26 @@
     }
 
     .tabList {
-        background-color: red;
+        background: linear-gradient(145deg, #1e2024, #23272b);
+        box-shadow: 10px 10px 19px #1c1e22, -10px -10px 19px #262a2e;
+        color: #c4cfde;
+        border: 0, none;
+        padding: 30px 10px;
+        border-radius: 10px;
+        font-size: 16px;
+        font-weight: 500;
+        text-transform: capitalize;
+
+        li:hover {
+            color: #ff014f;
+            background-color: transparent;
+            border-color: transparent;
+            border: 0 none;
+            background: linear-gradient(145deg, #1e2024, #23272b);
+            box-shadow: 10px 10px 19px #1c1e22, -10px -10px 19px #262a2e;
+        }
+
     }
+
+
 }
