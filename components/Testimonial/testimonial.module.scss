@@ -1,38 +1,67 @@
-.container{
-   max-width: 80%;
-margin: 0 auto;
-display: block !important;
+.container {
+    max-width: 80%;
+    margin: 0 auto;
+    display: block ;
 
+
+    & > h2 {
+        color: var(--secondary);
+        line-height: 14px;
+        text-transform: uppercase;
+        letter-spacing: 2px;
+        font-size: 14px;
+        font-weight: 500;
+        text-align: center;
+    }
+
+    & > h1 {
+        margin: 0;
+        font-size: 60px;
+        font-weight: 700;
+        line-height: 1.2;
+        text-transform: capitalize;
+        color: var(--color-lightn);
+        text-align: center;
+    }
+
+    .slick-arrow {
+        position: absolute;
+        right: 0;
+        top:0; 
+        background-color: red !important;
+    }
 }
+
+
+// ---- slider style ---
 
 .inner {
     display: flex;
-    justify-content: space-around;  
+    justify-content: space-around;
     align-items: center;
     gap: 50px;
-   
-.left{
-    width:35%;
-    align-items: center;
-    padding: 30px ;
-}
-.right{
-    padding: 50px 40px 50px 40px;
-    width:65%;
-    margin-top: 110px;
-    justify-content: center;
 
-}
+    
+
+    .left {
+        width: 35%;
+        align-items: center;
+        padding: 30px;
+    }
+    .right {
+        padding: 50px 40px 50px 40px;
+        width: 65%;
+        margin-top: 110px;
+        justify-content: center;
+    }
     .left,
     .right {
-        
         background: linear-gradient(145deg, #1e2024, #23272b);
-        box-shadow:  10px 10px 19px #1c1e22, -10px -10px 19px #262a2e;
+        box-shadow: 10px 10px 19px #1c1e22, -10px -10px 19px #262a2e;
         border-radius: 10px;
         transition: all 0.5s;
         overflow: hidden;
         cursor: pointer;
-        
 
         .imgContainer img {
             border-radius: 10px;
@@ -72,7 +101,6 @@ display: block !important;
 
         h2 {
             font-size: 24px;
-
         }
 
         p {
@@ -101,10 +129,6 @@ display: block !important;
                 height: 10px;
                 width: auto;
             }
-
         }
-
     }
-
-
 }

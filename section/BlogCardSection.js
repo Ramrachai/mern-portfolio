@@ -33,7 +33,7 @@ const blogData = [
 const BlogCardSection = () => {
     return (
         <div>
-            <section className={styles.container}>
+            <section className={styles.container} id='blog'>
                 <h2>VISIT MY BLOG AND KEEP YOUR FEEDBACK</h2>
                 <h1>My Blog</h1>
                 <div className={styles.cardContainer}>

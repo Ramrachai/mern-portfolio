@@ -48,23 +48,23 @@ let featureData = [
 
 const FeatureSection = () => {
   return (
-    <div className={styles.container}>
-      <h2>Features </h2>
-      <h1>What i do </h1>
+      <div className={styles.container} id='features'>
+          <h2>Features </h2>
+          <h1>What i do </h1>
 
-      <div className={styles.cardsContainer}>
-        {featureData.map((item, index) => {
-          return (
-            <FeatureCard
-              key={index}
-              icon={item.icon}
-              title={item.title}
-              decription={item.description}
-            />
-          );
-        })}
+          <div className={styles.cardsContainer}>
+              {featureData.map((item, index) => {
+                  return (
+                      <FeatureCard
+                          key={index}
+                          icon={item.icon}
+                          title={item.title}
+                          decription={item.description}
+                      />
+                  );
+              })}
+          </div>
       </div>
-    </div>
   );
 };
 

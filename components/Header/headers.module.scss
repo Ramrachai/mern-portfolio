@@ -9,5 +9,6 @@
     top:0; 
     left: 0;
     backdrop-filter: blur(10px);
-    background: var(--primary);
+    background: #000000ab;
+    z-index: 10;
 }

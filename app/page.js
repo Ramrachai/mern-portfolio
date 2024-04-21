@@ -1,6 +1,5 @@
 import Header from '@/components/Header';
-import ResumeTabs from '@/components/ResumeTabs/Tabs';
-
+import ResumeTabs from '@/components/ResumeTabs';
 import Testimonial from '@/components/Testimonial/Testimonial';
 import { testimonialsData } from '@/components/Testimonial/testimonialData';
 import BlogCardSection from '@/section/BlogCardSection';
@@ -15,9 +14,9 @@ export default function Home() {
             <HeroSection />
             <FeatureSection />
             <PortfolioSection />
-            <BlogCardSection />
-            <Testimonial testimonials={testimonialsData} />
             <ResumeTabs />
+            <Testimonial testimonials={testimonialsData} />
+            <BlogCardSection />
         </main>
     );
 }

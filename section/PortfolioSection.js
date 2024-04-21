@@ -57,17 +57,21 @@ const portfolioData = [
 
 const PortfolioSection = () => {
     return (
-      <section className={styles.container}>
-        <h2>VISIT MY PORTFOLIO AND KEEP YOUR FEEDBACK</h2>
-        <h1>My Portfolio</h1>
-        <div className={styles.cardsContainer}>
-          {portfolioData.map((item, index) => {
-            return (
-              <PortfolioCard img={item.img} title={item.title} key={index} />
-            );
-          })}
-        </div>
-      </section>
+        <section className={styles.container} id='portfolio'>
+            <h2>VISIT MY PORTFOLIO AND KEEP YOUR FEEDBACK</h2>
+            <h1>My Portfolio</h1>
+            <div className={styles.cardsContainer}>
+                {portfolioData.map((item, index) => {
+                    return (
+                        <PortfolioCard
+                            img={item.img}
+                            title={item.title}
+                            key={index}
+                        />
+                    );
+                })}
+            </div>
+        </section>
     );
 }
 
