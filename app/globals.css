@@ -16,10 +16,12 @@
 --secondary: #ff014f;
 --text-color: #c4cfde;  
 --color-lightn: #c4cfde; 
+--color-body:#878e99; 
 --shadow-1: 10px 10px 19px #1c1e22, -10px -10px 19px #262a2e;
 --shadow-2: 1px 4px 2px -3px rgba(0, 0, 0, 0.7) inset, -1px -3px 3px -2px rgba(255, 255, 255, 0.2) inset;
 --background-1: linear-gradient(145deg, #1e2024, #23272b);
 --background-1-hover: linear-gradient(to right bottom, #212428, #16181c);
+--transition: 0.4s;
 }
 
 * {
